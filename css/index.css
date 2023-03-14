@@ -92,6 +92,7 @@ header span {
 .sobre-textos p {
   position: relative;
   margin-bottom: 12px;
+  max-width: 48ch;
 }
 
 .sobre-textos p:last-child {
@@ -417,19 +418,13 @@ footer p {
   }
 
   /* projetos */
-  .span-projeto1 {
-    left: 120px;
-    top: 4px;
+  .info-projeto h3,
+  .info-projeto2 h3 {
+    position: initial;
   }
 
-  .span-projeto2 {
-    left: 120px;
-    top: 5px;
-  }
-
-  .span-projeto3 {
-    left: 110px;
-    top: 4px;
+  .span-projeto {
+    position: initial;
   }
 }
 
@@ -444,5 +439,86 @@ footer p {
 
   .span-intro {
     font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-intro {
+    gap: 12px;
+    padding: 120px 0 48px 0;
+  }
+  .nome-intro {
+    font-size: 3.8rem;
+  }
+
+  .span-intro {
+    font-size: 1.6rem;
+  }
+
+  .img-contato {
+    border-radius: 0;
+  }
+
+  .sobre-textos p:before {
+    display: none;
+  }
+
+  .sobre-textos p {
+    max-width: 40ch;
+  }
+}
+
+@media (max-width: 480px) {
+  /* tipografia */
+  .titulo-1 {
+    font-size: 1.9rem;
+  }
+
+  .titulo-2 {
+    font-size: 1.2rem;
+  }
+
+  .titulo-3 {
+    font-size: 1rem;
+  }
+
+  .texto-1 {
+    font-size: 0.9rem;
+  }
+
+  .texto-2 {
+    font-size: 0.75rem;
+  }
+
+  .container-intro {
+    gap: 12px;
+    padding: 120px 0 48px 0;
+  }
+  .nome-intro {
+    font-size: 2.4rem;
+  }
+
+  .span-intro {
+    font-size: 1.2rem;
+  }
+
+  .sobre-bg {
+    height: 300px;
+  }
+
+  /* projetos span */
+  .span-projeto1 {
+    left: 100px;
+    top: 2px;
+  }
+
+  .span-projeto2 {
+    left: 100px;
+    top: 3px;
+  }
+
+  .span-projeto3 {
+    left: 90px;
+    top: 2px;
   }
 }
