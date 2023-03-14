@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Nunito+Sans&display=swap");
+
+:root {
+  --primaria-1: #132954;
+  --primaria-2: #0046ce;
+  --primaria-3: #2a6ff5;
+  --primaria-4: #77a3fa;
+  --secundaria-1: #000000;
+  --secundaria-2: #404040;
+  --secundaria-3: #808080;
+  --secundaria-4: #f0f3f9;
+  --secundaria-5: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.titulo-1 {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.82rem;
+  color: var(--secundaria-1);
+  text-transform: uppercase;
+}
+
+.titulo-2 {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.91rem;
+  color: var(--primaria-1);
+}
+
+.titulo-3 {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.44rem;
+  color: var(--primaria-1);
+}
+
+.texto-1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.44rem;
+  color: var(--primaria-1);
+}
+
+.texto-2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.btn-1 {
+  padding: 10px 20px;
+  background-color: var(--primaria-3);
+  color: var(--secundaria-5);
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.btn-1:hover {
+  background-color: var(--primaria-2);
+}
+
+.btn-2 {
+  padding: 10px 20px;
+  color: var(--primaria-1);
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  /* border: 2px solid var(--primaria-1); */
+  outline: 2px solid var(--primaria-1);
+  outline-offset: -2px;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.btn-2:hover {
+  background-color: var(--primaria-1);
+  color: var(--secundaria-5);
+}
+
+.btn-3 {
+  padding: 10px 20px;
+  font-family: "Fira Sans", sans-serif;
+  background: var(--primaria-1);
+  color: var(--secundaria-5);
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.btn-3:hover {
+  background-color: var(--secundaria-1);
+}
+
+.drop-shadow {
+  box-shadow: 4px 4px 16px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  max-width: 100%;
+}
