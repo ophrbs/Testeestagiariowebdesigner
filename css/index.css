@@ -12,6 +12,7 @@ img {
   max-width: 100%;
 }
 
+/* header */
 header {
   background-color: var(--primaria-3);
   display: flex;
@@ -46,6 +47,7 @@ header span {
   width: 150px;
 }
 
+/* intro */
 .nome-intro {
   font-family: "Kaushan Script", cursive;
   color: var(--secundaria-5);
@@ -69,6 +71,7 @@ header span {
   padding: 148px 0 100px 0;
 }
 
+/* sobre */
 .sobre-bg {
   background-color: var(--primaria-3);
   height: 240px;
@@ -130,9 +133,11 @@ header span {
   text-align: right;
 }
 
+/* projetos */
 .titulo-projetos {
   text-align: center;
   margin-top: 320px;
+  color: var(--primaria-3);
 }
 
 .projeto-luthieria,
@@ -160,7 +165,7 @@ header span {
 
 .span-projeto1 {
   left: 164px;
-  top: 5px;
+  top: 6px;
 }
 
 .span-projeto2 {
@@ -170,7 +175,7 @@ header span {
 
 .span-projeto3 {
   left: 152px;
-  top: 6px;
+  top: 7px;
 }
 
 .texto-projeto {
@@ -199,7 +204,6 @@ header span {
 
 .projeto-rentacar {
   background-color: #1a1a1a;
-  padding-left: 240px;
 }
 
 .img-projetos1 {
@@ -214,6 +218,7 @@ header span {
   max-width: 80%;
   grid-column: 2;
   grid-row: 1;
+  margin-left: 60px;
 }
 
 .info-projeto2 {
@@ -222,6 +227,7 @@ header span {
   justify-self: end;
 }
 
+/* contato */
 .contato {
   background-color: var(--primaria-3);
 }
@@ -286,6 +292,7 @@ header span {
   padding-bottom: 100px;
 }
 
+/* footer */
 footer {
   background-color: var(--secundaria-1);
   display: flex;
@@ -295,4 +302,147 @@ footer {
 
 footer p {
   color: var(--secundaria-3);
+}
+
+/* responsivo */
+@media (max-width: 1200px) {
+  /* projetos */
+  .projeto-luthieria,
+  .projeto-esse,
+  .projeto-rentacar {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 24px;
+  }
+  .img-projetos1,
+  .img-projetos2,
+  .info-projeto2 {
+    margin: 0px;
+    justify-self: auto;
+  }
+
+  .img-projetos2,
+  .info-projeto2 {
+    grid-area: unset;
+  }
+
+  /* contato */
+  .contato-cards {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 48px;
+  }
+
+  .contato-github {
+    justify-self: auto;
+  }
+
+  .titulo-contato {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  /* sobre */
+  .sobre {
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .sobre-bg {
+    height: 400px;
+  }
+
+  .sobre-skills {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 12px;
+    border-bottom: 1px solid var(--secundaria-4);
+    padding-bottom: 24px;
+  }
+
+  .sobre-skills div {
+    text-align: center;
+  }
+
+  /* projetos */
+  .info-projeto,
+  .info-projeto2 {
+    max-width: 50ch;
+  }
+}
+
+@media (max-width: 800px) {
+  /* tipografia */
+  .titulo-1 {
+    font-size: 3rem;
+  }
+
+  .titulo-2 {
+    font-size: 1.44rem;
+  }
+
+  .titulo-3 {
+    font-size: 1.2rem;
+  }
+
+  .texto-1 {
+    font-size: 1.2rem;
+  }
+
+  .texto-2 {
+    font-size: 1rem;
+  }
+
+  .titulo-projetos {
+    margin-top: 0px;
+  }
+
+  /* Sobre */
+  .container-intro {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .nome-intro,
+  .span-intro {
+    justify-self: auto;
+  }
+
+  .nome-intro br,
+  .span-intro br {
+    display: inline;
+    content: " ";
+    padding: 6px;
+  }
+
+  /* projetos */
+  .span-projeto1 {
+    left: 120px;
+    top: 4px;
+  }
+
+  .span-projeto2 {
+    left: 120px;
+    top: 5px;
+  }
+
+  .span-projeto3 {
+    left: 110px;
+    top: 4px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-intro {
+    gap: 12px;
+    padding: 120px 0 48px 0;
+  }
+  .nome-intro {
+    font-size: 4.8rem;
+  }
+
+  .span-intro {
+    font-size: 2.4rem;
+  }
 }

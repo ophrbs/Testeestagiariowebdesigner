@@ -2,5 +2,5 @@
 
 ☑️ Design e Protótipo <br>
 ☑️ HTML e CSS <br>
-🔳 Responsivo <br>
+☑️ Responsivo <br>
 🔳 JavaScript
