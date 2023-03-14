@@ -429,10 +429,20 @@ footer p {
 }
 
 @media (max-width: 700px) {
+  /* header */
+  header span {
+    display: none;
+  }
+
+  header nav {
+    margin-left: 25px;
+  }
+
   .container-intro {
     gap: 12px;
     padding: 120px 0 48px 0;
   }
+
   .nome-intro {
     font-size: 4.8rem;
   }
@@ -453,6 +463,10 @@ footer p {
 
   .span-intro {
     font-size: 1.6rem;
+  }
+
+  .span-intro br {
+    padding: 4px;
   }
 
   .img-contato {
@@ -492,8 +506,9 @@ footer p {
 
   .container-intro {
     gap: 12px;
-    padding: 120px 0 48px 0;
+    padding: 80px 0 48px 0;
   }
+
   .nome-intro {
     font-size: 2.4rem;
   }
@@ -502,8 +517,21 @@ footer p {
     font-size: 1.2rem;
   }
 
+  .span-intro br {
+    padding: 3px;
+  }
+
   .sobre-bg {
     height: 300px;
+  }
+
+  header .btn-2 {
+    font-size: 0.7rem;
+    padding: 8px 16px;
+  }
+
+  header nav {
+    gap: 15px;
   }
 
   /* projetos span */
