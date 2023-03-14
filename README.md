@@ -1,2 +1,6 @@
-# Testeestagiariowebdesigner
-Teste prático para uma vaga de Estagiário de Web Design.
+# Teste Estagiário Web Designer
+
+☑️ Design e Protótipo <br>
+☑️ HTML e CSS <br>
+🔳 Responsivo <br>
+🔳 JavaScript
